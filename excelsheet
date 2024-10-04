@@ -1,0 +1,23 @@
+import openpyxl
+
+# Create a new workbook
+workbook = openpyxl.Workbook()
+
+# Select the active worksheet
+sheet = workbook.active
+
+# Add data to the worksheet (adjust as needed)
+sheet['A1'] = 'Name'
+sheet['B1'] = 'Age'
+sheet['C1'] = 'City'
+sheet['A2'] = 'Alice'
+sheet['B2'] = 30
+sheet['C2'] = 'New York'
+sheet['A3'] = 'Bob'
+sheet['B3'] = 25
+sheet['C3'] = 'Los Angeles'
+
+# Save the workbook
+workbook.save('example.xlsx')
+
+print("Excel sheet created successfully!")
